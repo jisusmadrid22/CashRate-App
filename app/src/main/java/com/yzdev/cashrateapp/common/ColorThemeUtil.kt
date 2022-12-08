@@ -15,3 +15,12 @@ fun getColorThemeText(): Color{
         WhiteMain
     }
 }
+
+@Composable
+fun getColorThemeTextBackground(): Color{
+    return if (!isSystemInDarkTheme()){
+        BlackMain
+    }else{
+        WhiteMain
+    }
+}

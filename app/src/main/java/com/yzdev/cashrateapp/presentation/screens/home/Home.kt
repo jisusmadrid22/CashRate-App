@@ -11,6 +11,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import com.yzdev.cashrateapp.presentation.screens.home.composable.HeaderHome
+import com.yzdev.cashrateapp.presentation.screens.home.composable.SelectorList
 
 @Composable
 fun HomeScreen(
@@ -33,6 +34,10 @@ private fun HomeLayout(
         LazyColumn {
             item {
                 HeaderHome()
+            }
+
+            item {
+                SelectorList()
             }
         }
     }

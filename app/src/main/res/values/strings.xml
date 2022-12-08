@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CashRateApp</string>
+    <string name="favoritesTitle">Favoritos</string>
+    <string name="allTitle">Todos</string>
 </resources>
