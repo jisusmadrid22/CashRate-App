@@ -26,8 +26,8 @@ fun HeaderHome(
     subtitle: String = "Subtitle for more information",
     date: String = "07/12/2022 10:00 AM",
     coinTitle: String = "$",
-    onClickMenu: ()-> Unit = {},
-    onClickCoin: ()-> Unit = {}
+    onClickMenu: ()-> Unit,
+    onClickCoin: ()-> Unit
 ) {
 
     val height = LocalConfiguration.current.screenHeightDp.dp
