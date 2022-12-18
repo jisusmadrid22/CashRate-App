@@ -7,20 +7,16 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.onSizeChanged
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
-import com.yzdev.cashrateapp.App
 import com.yzdev.cashrateapp.R
 import com.yzdev.cashrateapp.common.AppResources
 import com.yzdev.cashrateapp.common.composable.canvasUtil.LineCustom
-import com.yzdev.cashrateapp.common.getColorThemeText
-import com.yzdev.cashrateapp.common.getColorThemeTextBackground
+import com.yzdev.cashrateapp.common.setColorTextByTheme
 
 @Composable
 fun SelectorList(
@@ -65,7 +61,7 @@ private fun LabelSelector(
     ) {
         Text(
             text = label,
-            style = MaterialTheme.typography.body1.copy(fontWeight = FontWeight.Bold, color = getColorThemeTextBackground().copy(alpha = if(!isSelect){0.5f}else{1f})),
+            style = MaterialTheme.typography.body1.copy(fontWeight = FontWeight.Bold, color = setColorTextByTheme().copy(alpha = if(!isSelect){0.5f}else{1f})),
             textAlign = TextAlign.Center
         )
 

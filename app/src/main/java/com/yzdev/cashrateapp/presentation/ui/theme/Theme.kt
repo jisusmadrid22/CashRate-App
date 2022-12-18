@@ -39,7 +39,7 @@ fun CashRateAppTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Compo
 
     MaterialTheme(
         colors = colors,
-        typography = Typography,
+        typography = TypographyInter,
         shapes = Shapes,
         content = content
     )

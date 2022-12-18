@@ -17,7 +17,7 @@ val Inter = FontFamily(
     Font(R.font.inter_semibold, FontWeight.SemiBold),
 )
 
-val Typography = Typography(
+val TypographyInter = Typography(
     h1 = TextStyle(
         fontFamily = Inter,
         fontWeight = FontWeight.Light,

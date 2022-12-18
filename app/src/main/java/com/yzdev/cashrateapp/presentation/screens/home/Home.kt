@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
@@ -15,6 +16,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import com.yzdev.cashrateapp.presentation.screens.home.composable.HeaderHome
+import com.yzdev.cashrateapp.presentation.screens.home.composable.ListItemCashRateHome
 import com.yzdev.cashrateapp.presentation.screens.home.composable.SelectorList
 import com.yzdev.cashrateapp.presentation.screens.menu.MenuScreen
 import kotlinx.coroutines.launch
@@ -65,6 +67,26 @@ private fun HomeLayout(
             item {
                 SelectorList()
             }
+
+            infoDolarToday.info?.let {
+                items(setList()){item->
+                    ListItemCashRateHome(
+                        item = it,
+                        onClickItem = {}
+                    )
+                }
+            }
         }
     }
+}
+
+fun setList(): List<String>{
+    return listOf(
+        "s",
+        "s",
+        "s",
+        "s",
+        "s",
+        "s",
+    )
 }
